@@ -72,9 +72,9 @@ def click_pairs(card_positions):
                 if i + 1 < len(positions):
                     (x1, y1), (x2, y2) = positions[i], positions[i+1]
                     click(x1, y1)
-                    time.sleep(0.5)  # Adjust the delay as needed
+                    time.sleep(0.1)  # Adjust the delay as needed
                     click(x2, y2)
-                    time.sleep(0.5)
+                    time.sleep(0.2) # Adjust the delay as needed
 
 # Main function to run the game bot
 def main():
@@ -108,7 +108,7 @@ def main():
                 else:
                     time.sleep(0.2)
             # break  # Remove break to continuously check and play
-        time.sleep(0.2)  # Adjust the delay as needed
+        time.sleep(4)  # Adjust the delay as needed
 
 if __name__ == "__main__":
     main()
